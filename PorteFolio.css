@@ -1,0 +1,499 @@
+body { 
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+/* Liens */
+a {
+    color: #ffcc00;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+/* HEADER */
+header {
+    background-color: #073a5b; /* Bandeau du haut */
+    color: #ffffff; /* Texte en blanc pour contraste */
+    padding: 30px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    /*bloque le bandeau 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;*/
+}
+h1 {
+    text-shadow: 4px 4px 5px rgb(26, 24, 25)
+}
+
+/*PHOTO CV*/
+.photo-container {
+    position: absolute; 
+    top: 20px; /* Ajuste la position verticale */
+    right: 20px; /* Place l’image à droite */
+}
+
+.photo-container img {
+    width: 150px; /* Ajuste la taille de l’image */
+    height: 150px;
+    border-radius: 50%; /* Effet arrondi */
+    object-fit: cover; /* Évite la déformation */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* NAVIGATION */
+nav {
+    text-align: center;
+    margin-top: 10px;
+    /*bloque le bandeau 
+    position: fixed;
+    top: 50px; Ajustez cette valeur selon la hauteur de votre header
+    width: 100%;
+    z-index: 999;*/
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #073a5b;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-menu a:hover {
+    background-color: #ff4c4c; /* Changement au survol */
+    color: white;
+    border-radius: 20px;
+}
+
+/* CONTENU PRINCIPAL */
+.page-content {
+    margin: 4%;
+}
+
+h2 {
+    border: 2px solid #073a5b; /* Définit un bord de 2px de couleur bleu */
+    padding: 10px; /* Ajoute de l'espace autour du texte */
+    border-radius: 10px; /* Coins arrondis */
+    display: inline-block; /* Permet à l'élément de s'ajuster à la largeur du texte */
+    max-width: 100%; /* S'assure que l'élément ne dépasse pas la largeur de son conteneur */
+    overflow-wrap: break-word; /* Permet de casser les mots s'ils sont trop longs */
+    background-color: #63615d;
+    color: #222;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+/*SECTION*/  
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre toutes les sections */
+    width: 100%;
+}
+
+section {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+    line-height: 1.6;
+    font-size: 18px;
+    text-align: left;
+    width: 100%;
+}
+
+/* PROJETS ou trajectoire professionnelle */
+.project {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: space-around;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    align-items: stretch; /* Aligne les blocs en hauteur */
+    gap: 6px; /* Ajoute un espace régulier entre les blocs */
+}
+
+.project div {
+    background-color: #ffffff; /* Fond blanc pour lisibilité */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 15px;
+    padding: 50px;
+    width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project div:hover {
+    transform: scale(1.05); /* Effet zoom léger */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/*Cours*/
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacement entre les images */
+    justify-content: center;
+    
+  }
+  
+  .image-container img {
+    width: 150px;  /* Ajuste selon ton besoin */
+    height: 150px; /* Ajuste selon ton besoin */
+    object-fit: cover; /* Assure que l'image remplit bien son cadre */
+    border-radius: 10px; /* Optionnel, pour des bords arrondis */
+  }
+  
+
+/*BTS SIO*/
+.bts {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: space-around;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    align-items: stretch; /* Aligne les blocs en hauteur */
+    gap: 6px; /* Ajoute un espace régulier entre les blocs */
+}
+
+.bts div {
+    background-color: #ffffff; /* Fond blanc pour lisibilité */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    margin: 50px;
+    padding: 100px;
+    width: 500px; /* Augmente la largeur à 500px */
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bts div:hover {
+    transform: scale(1.05); /* Effet zoom léger */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #222;
+    color: rgb(234, 236, 244);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Animation d'apparition en fondu */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Appliquer l'animation aux sections */
+section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/*FORMULAIRE pour le mails*/
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+    header, nav, section, footer {
+        padding: 20px;
+    }
+    h2 {
+        font-size: 20px;
+        max-width: 100%;
+    }
+    .project div, .bts div {
+        width: 90%;
+        padding: 30px;
+    }
+    form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+    nav a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .project div, .bts div {
+        width: 100%;
+        padding: 20px;
+    }
+    .image-container img {
+        max-height: 150px;
+    }
+}
+
+/*p {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }*/
+
+  /*animation de fond*/
+  body {
+    background: -moz-linear-gradient(45deg, #02e1ba 0%, #26c9f2 29%, #d911f2 66%, #ffa079 100%);
+    background: -webkit-linear-gradient(45deg, #02e1ba 0%,#26c9f2 29%,#d911f2 66%,#ffa079 100%);
+    background: linear-gradient(45deg, #02e1ba 0%,#26c9f2 29%,#d911f2 66%,#ffa079 100%);
+    background-size: 800% 800%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    min-height: 100vh; /* Modification ici */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+    position: relative; /* Enlève overflow: hidden */
+}
+body::before, 
+body::after {
+    content: "";
+    width: 70vmax;
+    height: 70vmax;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.07);
+    left: -20vmin;
+    top: -20vmin;
+    animation: morph 15s linear infinite alternate, spin 20s linear infinite;
+    z-index: 1;
+    will-change: border-radius, transform;
+    transform-origin: 55% 55%;
+    pointer-events: none; 
+}
+body::after {
+    width: 70vmin;
+    height: 70vmin;
+    left: auto;
+    right: -10vmin;
+    top: auto;
+    bottom: 0;
+    animation: morph 10s linear infinite alternate, spin 26s linear infinite reverse;
+    transform-origin: 20% 20%; 
+}
+@-webkit-keyframes Gradient {
+    0% {background-position: 0 50%}
+    50% {background-position: 100% 50%}
+    100% {background-position: 0 50%}
+}
+@-moz-keyframes Gradient {
+    0% {background-position: 0 50%}
+    50% {background-position: 100% 50%}
+    100% {background-position: 0 50%}
+}
+@keyframes Gradient {
+    0% {background-position: 0 50%}
+    50% {background-position: 100% 50%}
+    100% {background-position: 0 50%}
+}
+@keyframes morph {
+  0% {border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;}
+  100% {border-radius: 40% 60%; } 
+}
+@keyframes spin {
+  to {transform: rotate(1turn);} 
+}
+
+/*bts sio, page qui se retourne*/
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg); /* Rotation au hover ou au clic */
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Réduction du padding pour éviter le chevauchement */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-front {
+    background: #706767;
+}
+
+.flip-card-back {
+    background: #073a5b;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.card-container {
+    display: flex; /* Aligner les cartes en ligne */
+    justify-content: center; /* Centrer les cartes horizontalement */
+    align-items: center; /* Aligner verticalement si besoin */
+    gap: 100px; /* Espacement entre les cartes */
+    flex-wrap: nowrap; /* Empêche le retour à la ligne */
+}
+
+.flip-card {
+    width: 700px; /* Taille fixe pour chaque carte */
+    height: 750px; /* Hauteur fixe */
+    background-color: transparent;
+    perspective: 1000px;
+}
+
+
+/*backdoor*/
+.rotating-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.rotating-card.rotated .rotating-card-inner {
+    transform: rotateY(180deg); /* Rotation au clic */
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-front {
+    background: #706767;
+}
+
+.card-back {
+    background: #073a5b;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px; /* Espacement entre les cartes */
+}
+
+.rotating-card {
+    width: 550px; /* Largeur fixe pour chaque carte */
+    height: 450px; /* Hauteur fixe */
+    background-color: transparent;
+    perspective: 1000px;
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur et la hauteur */
+}
+
+.cv-container {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+.cv-section {
+    text-align: left;
+    margin-top: 20px;
+}
